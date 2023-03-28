@@ -28,7 +28,11 @@ function setGradient() {
 
 //Set Random Background
 function setrandom() {
-  body.style.background = `linear-gradient(to right, ${randColor()}, ${randColor()})`;
+  var newColor1 = randColor();
+  var newColor2 = randColor();
+  body.style.background = `linear-gradient(to right, ${newColor1}, ${newColor2})`;
+  color1.value = newColor1;
+  color2.value = newColor2;
   setcurrentBackground();
 }
 
